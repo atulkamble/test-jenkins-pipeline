@@ -8,10 +8,11 @@ pipeline {
                 sh 'git --version'
             }
         }
-stage('docker test') {
+    stage('docker test') {
             steps {
                 echo 'I am in test'
                 sh 'docker --version'
+                sh 'docker pull nginx:latest'
             }
         }
     }
