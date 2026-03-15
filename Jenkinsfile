@@ -12,7 +12,7 @@ pipeline {
             steps {
                 echo 'I am in test'
                 sh 'docker --version'
-                sh 'sudo docker pull nginx:latest'
+                sh 'docker pull nginx:latest'
             }
         }
     }
